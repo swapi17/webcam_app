@@ -1,0 +1,29 @@
+.cam-container{
+  display: flex;
+  justify-content: center;
+  
+   
+}
+.webcam{
+   border: 1px solid grey;
+   padding: 10px;
+}
+.snapshot{
+  border: 1px solid grey;
+  padding: 10px;
+}
+.snapshot img{
+  display: flex;
+  justify-content: center;
+  background-color: moccasin;
+  max-height: 300px;
+  margin: 20px;
+  
+}
+.cam-container h3{
+  text-align: center;
+  color: blue;
+}
+.image-btn{
+  margin:20px;
+}

@@ -1,0 +1,28 @@
+
+
+<div class="row cam-container">
+  <div class="col-xs-12">
+    <div class="webcam">
+       <h3>Webcam</h3>
+       <hr>
+	<webcam [height]="400" [width]="400" [trigger]="triggerObservable" (imageCapture)="handleImage($event)"	 
+	></webcam>
+  </div>
+  <hr>
+  <hr>
+   <div class="snapshot" *ngIf="webcamImage">
+     <h3>Captured Image</h3>
+     <hr>
+	<img [src]="webcamImage.imageAsDataUrl"/>
+  </div>
+	</div>
+</div>
+
+<h4 *ngIf="errors.length > 0">Messages:</h4>
+<ul *ngFor="let error of errors">
+	<li>{{error | json}}</li>
+</ul>
+
+
+
+
